@@ -2,9 +2,44 @@
 <html>
   <head>
     <title>Simple React Starter</title>
+    <link rel="stylesheet" href="/vendor/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/vendor/progress/progress.css">
+    <link rel="stylesheet" href="/vendor/todos/todo.css">
   </head>
   <body>
     <div id="container"></div>
+
+    <!-- Extract a component that takes an icon prop -->
+    <i class="fa fa-twitter"></i>
+
+    <!-- Extract a component that takes a value and a suit prop -->
+    <img src="/vendor/cards/2_of_clubs.svg" alt="2 of Clubs" />
+
+    <!-- Extract a component that takes a progress prop -->
+    <div class="progress-bar">
+      <span class="progress" style="width: 70%">
+        70%
+      </span>
+    </div>
+
+    <!-- Extract a todo list item that takes a complete and title prop -->
+    <ul>
+      <li class="complete">Learn ES2015</li>
+      <li class="complete">Learn about Components</li>
+      <li>Learn about state</li>
+    </ul>
+
+    <!-- Extract an alert link that takes an alert prop -->
+    <a href="#" onclick="alert('hello')">Alert Link</a>
+
+    <!-- Extract an Auth Link that takes a user object -->
+    <!-- If it is null -->
+    <p><a href="#">Sign Up</a></p>
+
+    <!-- If it is present -->
+    <p><a href="#">Signed In as Jon Snow</a></p>
+
+
     <script src="/bundle.js"></script>
   </body>
 </html>

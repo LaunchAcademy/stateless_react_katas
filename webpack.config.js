@@ -27,7 +27,10 @@ module.exports = {
     ]
   },
   plugins: [
-    new CopyWebpackPlugin([{from: './src/index.html', to: '/index.html'}]),
+    new CopyWebpackPlugin([
+      {from: './src/index.html', to: '/index.html'},
+      {from: './src/vendor', to: '/vendor'}
+    ]),
     new webpack.HotModuleReplacementPlugin()
   ],
   devtool: 'eval-source-map',

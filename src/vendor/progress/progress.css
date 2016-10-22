@@ -1,0 +1,13 @@
+.progress-bar {
+  width: 100%;
+  background-color: #888;
+}
+
+.progress {
+  display: block;
+  color: white;
+  text-align: right;
+  font-weight: bold;
+  background-color: #CCBC4A;
+  padding-right: 2px;
+}
